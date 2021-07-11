@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_HOST=sample_host
+      - POSTGRES_USER=admin
+      - POSTGRES_DB=sample_db
+      - POSTGRES_PASSWORD=imapassword
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - ./db/data/postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+

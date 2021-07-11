@@ -1,0 +1,9 @@
+
+target/
+dbt_modules/
+logs/
+.DS_Store
+*/.DS_Store
+
+db/
+data/*.csv
